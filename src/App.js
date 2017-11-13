@@ -16,9 +16,7 @@ class App extends Component {
     }
   }
   findNewUsers = newUsers => {
-    this.setState(prevState => ({
-      userList: prevState.userList.concat(newUsers)
-    }))
+    this.setState({ userList: [newUsers] })
   }
   render() {
     return (
